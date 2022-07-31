@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULÁRIOS</title>
+</head>
+<body>
+    <form>
+        <p>
+        <label for="nome">Nome:</label>
+        <input type="text" placeholder="Digite seu nome aqui..." maxlength="15" id="nome" name="nome" required></p>
+
+        <p>
+        <label for="numero">Número:</label>
+        <input type="number" placeholder="Digite seu número aqui..." id="numero" name="numero"></p>
+
+        <p>
+        <label for="senha">Senha:</label>
+        <input type="password" placeholder="Digite sua senha aqui..." maxlength="6" id="senha" name="senha"></p>
+
+        <p>
+        <label for="confirmar">Confirmar senha:</label>
+        <input type="password" placeholder="Digite sua senha aqui..." maxlength="6" id="confirmar" name="confirmar"></p>
+
+        <button type="submit">Enviar</button>
+
+        <p>Qual o método de contato de preferência?</p>
+
+        <label for="email">E-mail</label>
+        <input type="radio" id="email" name="metodoDeContato" value="email" required>
+        <label for="telefone">Telefone</label>
+        <input type="radio" id="telefone" name="metodoDeContato" value="telefone" required>
+        <label for="whatssapp">Whatsapp</label>
+        <input type="radio" id="whatssapp" name="metodoDeContato" value="whatsapp" required>
+
+        <p><button type="submit">Enviar</button></p>
+
+        <label for="plano">Plano</label>
+        <select name="plano" id="plano">
+            <option value="">Escolha o plano de sua preferência</option>
+            <option value="free">Free</option>
+            <option value="premium">Premium</option>
+            <option value="pro">Pro</option>
+        </select>
+
+        <button type="submit">Cadastrar</button>
+
+        <p><label for="mensagem">Mensagem:</label></p>
+        <textarea placeholder="Digite aqui sua mensagem..." name="mensagem" id="mensagem" cols="40" rows="10"></textarea>
+        <button type="submit">Enviar mensagem</button>
+
+
+    </form>
+</body>
+</html>
